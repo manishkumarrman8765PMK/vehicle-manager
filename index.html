@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#1976d2">
+  <title>Vehicle Manager</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>🚗 Vehicle Manager</h1>
+    <button id="langBtn">🌐 भाषा / Language</button>
+  </header>
+  <main>
+    <section class="welcome">
+      <h2 id="welcomeTitle">आपके वाहन की आसान देखभाल</h2>
+      <p id="welcomeText">Fuel, Mileage, Service और जरूरी Reminders एक जगह।</p>
+      <p class="voice-note">🎙️ बोलकर जानकारी भरने का विकल्प भी उपलब्ध है।</p>
+    </section>
+
+    <section class="grid">
+      <button class="card" onclick="showSection('vehicle')">🚗<span>Vehicle</span></button>
+      <button class="card" onclick="showSection('fuel')">⛽<span>Fuel</span></button>
+      <button class="card" onclick="showSection('mileage')">📊<span>Mileage</span></button>
+      <button class="card" onclick="showSection('reminders')">🔔<span>Reminders</span></button>
+      <button class="card" onclick="showSection('documents')">📄<span>Insurance / PUC</span></button>
+      <button class="card" onclick="showSection('obd')">🔌<span>OBD Connect</span></button>
+    </section>
+
+    <section id="panel" class="panel">
+      <h2>🚗 Vehicle Manager</h2>
+      <p>ऊपर किसी विकल्प को चुनें।</p>
+    </section>
+  </main>
+  <footer>Vehicle Manager • Simple • Useful • Hindi + English</footer>
+  <script src="app.js"></script>
+</body>
+</html>
